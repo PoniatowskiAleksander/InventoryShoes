@@ -1,58 +1,38 @@
-table, td, th {
-    border: 2px solid #000000;
-    border-collapse: collapse;
+body {
+    background-color: rgb(18, 205, 18);
 }
 
-td, th {
-    padding: 4px;
-    text-align: center;
-}
+/* file choose menu */
 
-tr {
-    height: 40px;
-}
-
-th {
-    border-bottom: 4px solid #000;
-}
-
-#table {
-    border: 1px solid #000000;
-    width: 80%;
-}
-
-
-main {
+.startmenu {
+    background-color: rgb(18, 205, 18);
     display: flex;
-}
-
-button {
-    width: 100px;
-    height: 70px;
-    font-size: 1.2em;
-    margin-top: 40px;
-}
-
-.round {
-    border-radius: 100px;
-    width: 90px;
-    height: 90px;
-}
-
-#buttons {
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 90vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
-    padding: 20px;
-    padding-top: 0px;
-    outline: 1px solid #000;
-    height: 700px;
-    position: fixed;
-    right: 10px;
-    width: 7%;
+    align-items: center;
+    position: relative;
+    left: 9vw;
 }
 
-section {
-    height: 0;
+.startmenu * {
+    margin: 2vw;
+}
+
+.startmenu h1 {
+    font-size: 4em;
+}
+
+.startmenu input {
+    font-size: 1.3em;
+}
+
+.startmenu button {
+    font-size: 1.4em;
 }
 

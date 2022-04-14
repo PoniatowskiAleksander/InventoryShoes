@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' href="style.css">
+    </head>
+    <body>
+        <div class="startmenu">
+            <h1>Choose json file to import data from</h1>
+            <input type='file' id='fileToRead' accept=".json">
+            <button>IMPORT DATA</button>
+        </div>
+
+        <script type='text/javascript'>
+            document.querySelector('.startmenu button').addEventListener('click', function() {
+                if (document.querySelector('.startmenu input').value != '') {
+                    let filename = document.querySelector('.startmenu input').files[0].name;
+                    console.log(filename);
+                    
+                };
+            })
+        </script>
+    </body>
+</html>
