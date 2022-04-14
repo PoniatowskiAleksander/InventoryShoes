@@ -1,0 +1,58 @@
+table, td, th {
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 4px;
+    text-align: center;
+}
+
+tr {
+    height: 40px;
+}
+
+th {
+    border-bottom: 4px solid #000;
+}
+
+#table {
+    border: 1px solid #000000;
+    width: 80%;
+}
+
+
+main {
+    display: flex;
+}
+
+button {
+    width: 100px;
+    height: 70px;
+    font-size: 1.2em;
+    margin-top: 40px;
+}
+
+.round {
+    border-radius: 100px;
+    width: 90px;
+    height: 90px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    padding: 20px;
+    padding-top: 0px;
+    outline: 1px solid #000;
+    height: 700px;
+    position: fixed;
+    right: 10px;
+    width: 7%;
+}
+
+section {
+    height: 0;
+}
+
