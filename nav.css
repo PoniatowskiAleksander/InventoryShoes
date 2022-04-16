@@ -10,7 +10,6 @@ nav {
     align-items: center;
     position: fixed;
     top: 0;
-    display: none;
     flex-wrap: wrap;
 }
 

@@ -1,0 +1,45 @@
+/* .itemsdatabase {
+    display: none;
+} */
+
+.itemsdatabase {
+    width: 90%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #fff; */
+    margin-left: 5%;
+   
+}
+
+.itemsdatabase .beforeLoadDiv {
+    color: #fff;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 1px solid #fff; */
+}
+
+.itemsdatabase .beforeLoadDiv p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.itemsdatabase .beforeLoadDiv div {
+    width: 100%;
+}
+
+.itemsdatabase .beforeLoadDiv input {
+    font-size: 0.5em;
+}
+
+.itemsdatabase .beforeLoadDiv button {
+    width: 27%;
+    font-size: 0.9em;
+}
+
+

@@ -2,31 +2,40 @@
 <html>
     <head>
         <meta charset='utf-8'>
-        <link rel='stylesheet' href="start.css">
+        <!-- <link rel='stylesheet' href="start.css"> -->
         <link rel='stylesheet' href="nav.css">
         <link rel='stylesheet' href="all.css">
+        <link rel='stylesheet' href="inventory.css">
+        <link rel='stylesheet' href="itemsdatabase.css">
     </head>
     <body>
-        <div class="startmenu">
-            <h1>Choose json file to import data from</h1>
-            <input type='file' id='fileToRead' accept=".json">
-            <button>IMPORT DATA</button>
-        </div>
-
+        <div class="emptyDiv"></div>
+        <p class="itemsLoaded" style="display:none;">false</p>
         <nav>
             <div><p>Inventory</p></div>
             <div class="whiteLine"></div>
-            <div><p>Shoes Database</p></div>
+            <div><p>Items Database</p></div>
             <br>
             <hr class="navhr">
         </nav>
         
-        <main class="main1"> 
+        <main class="inventory"> 
             
         </main>
 
-        
+        <main class="itemsdatabase">
+            <div class="beforeLoadDiv">
+                <p>Load Database</p>
+                <input type="file" name="database" accept=".json" />
+                <div></div>
+                <br></br>
+                <button>LOAD</button>
+                <p class="error"></p>
+            </div>
+        </main>
+
+        <script type="text/javascript" src="itemsdatabase.js"></script>
         <script type='text/javascript'></script>
-        <script type='text/javascript' src="start.js"></script>
+       
     </body>
 </html>

@@ -24,3 +24,7 @@ document.querySelector('.startmenu button').addEventListener('click', function()
         
     };
 })
+
+document.body.style['background-color'] = '#524F4D';
+document.body.style['overflow'] = 'visible';
+document.querySelector('nav').style['display'] = 'flex';
