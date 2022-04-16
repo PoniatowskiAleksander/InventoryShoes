@@ -12,7 +12,13 @@ body {
 
 .emptyDiv { 
     width: 100%;
-    height: 140px;
+    height: 190px;
+    background-color: #524f4d;
 }
 
 
+footer {
+    margin-top: 25px;
+    background-color: red;
+    height: 50px;
+}
