@@ -1,0 +1,8 @@
+dodawanie do bazy danych butow
+usuwanie z bazy danych butow
+
+dodawanie butow do inv
+ogolnie inv to do
+
+
+
