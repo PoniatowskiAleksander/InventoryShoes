@@ -6,15 +6,16 @@ document.querySelector('.startmenu button').addEventListener('click', function()
             .then(response => response.json())
             .then(data => {
                 var data = data.data;
-                console.log();
+                console.log(data.shoes[0].nam);
             })
         setTimeout(() => {
             document.querySelector('.startmenu').display = 'none';
             for (i of document.querySelectorAll('.startmenu')) {
                 i.style['display'] = 'none';
             }
-            document.body.style['background-color'] = '#fff';
+            document.body.style['background-color'] = '#524F4D';
             document.body.style['overflow'] = 'visible';
+            document.querySelector('nav').style['display'] = 'flex';
         }, 5000)
 
         document.querySelector('.startmenu').classList.add('bodyDisappear');

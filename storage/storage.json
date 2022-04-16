@@ -1,9 +1,0 @@
-{
-    "data": {
-        "shoes": [
-            {"name": "yeezy 350 1", "size": "14"},
-            {"name": "yeezy 350 2", "size": "15"},
-            {"name": "yeezy 350 3", "size": "16"}
-        ]
-    }
-}
