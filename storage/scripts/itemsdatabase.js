@@ -11,7 +11,7 @@ document.querySelector('.itemsdatabase .beforeLoadDiv button').addEventListener(
    
     var filename = document.querySelector('.itemsdatabase .beforeLoadDiv input').files[0].name;
     console.log(filename);
-    var filepath = 'storage/' + filename;
+    var filepath = 'storage/databases/' + filename;
 
     fetch(filepath)
         .then(response => response.json())
@@ -19,7 +19,9 @@ document.querySelector('.itemsdatabase .beforeLoadDiv button').addEventListener(
             var data = data.data;
             console.log(data);
             var shoes = data.shoes;
-            document.querySelector('.itemsdatabase').innerHTML = '<div class="itemsdatabaseMainDiv"></div>';
+            document.querySelector('.itemsdatabase').innerHTML = document.querySelector('.itemsdatabaseCodeStorage').innerHTML;
+            document.querySelector('.itemsdatabase').innerHTML += '<div class="itemsdatabaseMainDiv"></div>';
+            
             for (i of shoes) {
                 console.log(i);
                 let itemDiv = document.createElement('div');
@@ -67,7 +69,23 @@ document.querySelector('.itemsdatabase .beforeLoadDiv button').addEventListener(
 
                 document.querySelector('.itemsdatabaseMainDiv').append(itemDiv);
 
+                
             }
         })
     
 })
+
+function getItemData(url) {
+    let website = new XMLHttpRequest();
+    website.addEventListener('load', function() {
+        let temp = this.responseText;
+        return temp;
+    });
+    website.open('GET', url);
+    website.send();
+}
+
+
+function addItemToDatabase(url) {
+    
+}

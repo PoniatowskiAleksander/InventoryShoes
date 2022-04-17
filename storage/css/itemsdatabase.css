@@ -9,7 +9,7 @@
     align-items: center;
     /* border: 1px solid #fff; */
     margin-left: 5%;
-   
+    flex-direction: column;
 }
 
 .itemsdatabase .beforeLoadDiv {
@@ -92,5 +92,16 @@
 
 .itemNameId p {
     height: 0px;
+}
+
+
+/* upper buttons */
+
+.itemsdatabaseCodeStorage, .itemsdatabaseCodeStorage > * {
+    display: none;
+}
+
+.fa-solid {
+    font-size: 20em;
 }
 

@@ -4,18 +4,24 @@
         <meta charset='utf-8'>
         <!-- <link rel='stylesheet' href="start.css"> -->
         
-        <link rel='stylesheet' href="all.css">
-        <link rel='stylesheet' href="inventory.css">
-        <link rel='stylesheet' href="itemsdatabase.css">
-        <link rel='stylesheet' href="nav.css">
+        <link rel='stylesheet' href="storage/css/all.css">
+        <link rel='stylesheet' href="storage/css/inventory.css">
+        <link rel='stylesheet' href="storage/css/itemsdatabase.css">
+        <link rel='stylesheet' href="storage/css/nav.css">
+
     </head>
     <body>
+        <div class='itemsdatabaseCodeStorage'>
+            <div class='itemsdatabaseTopButtons'>
+                <div class="addButton"><i class="fa-solid fa-plus"></i></div>
+            </div>
+        </div>
         <div class="emptyDiv"></div>
         <p class="itemsLoaded" style="display:none;">false</p>
         <nav>
-            <div><p>Inventory</p></div>
+            <div class="inventoryButton"><p>Inventory</p></div>
             <div class="whiteLine"></div>
-            <div><p>Items Database</p></div>
+            <div class="databaseButton"><p>Items Database</p></div>
             <br>
             <hr class="navhr">
             <div class="empty"></div>
@@ -40,8 +46,9 @@
             
         </footer>
 
-        <script type="text/javascript" src="itemsdatabase.js"></script>
-        <script type='text/javascript'></script>
-       
+        <script type="text/javascript" src="storage/scripts/itemsdatabase.js"></script>
+        <script type='text/javascript' src="storage/scripts/all.js"></script>
+        <script type='text/javascript' src="storage/scripts/nav.js"></script>
+        <script src="https://kit.fontawesome.com/65de2218e3.js" crossorigin="anonymous"></script>
     </body>
 </html>
