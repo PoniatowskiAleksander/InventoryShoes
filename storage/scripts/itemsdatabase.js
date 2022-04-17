@@ -21,7 +21,7 @@ document.querySelector('.itemsdatabase .beforeLoadDiv button').addEventListener(
             var shoes = data.shoes;
             document.querySelector('.itemsdatabase').innerHTML = document.querySelector('.itemsdatabaseCodeStorage').innerHTML;
             document.querySelector('.itemsdatabase').innerHTML += '<div class="itemsdatabaseMainDiv"></div>';
-            
+            addButtonListener()
             for (i of shoes) {
                 console.log(i);
                 let itemDiv = document.createElement('div');
@@ -75,17 +75,43 @@ document.querySelector('.itemsdatabase .beforeLoadDiv button').addEventListener(
     
 })
 
+
+function requestHandler(url) {
+    let smallHtml = document.getElementsByTagName("div")[0];
+    let itemname = smallHtml.getElementsByClassName('chakra-heading')[0].innerText;
+    console.log(smallHtml);
+    itemname = itemname.replace('\n', ' ');
+    console.log(itemname);
+    let sku = smallHtml.getElementsByClassName('css-ziwxw9')[0].textContent;
+    console.log(sku)
+    let imgLink = smallHtml.querySelectorAll('div.css-1iec7mm img')[0].getAttribute('src');
+    console.log(imgLink);
+    let stockxLink = url;
+    console.log(stockxLink);
+    
+}
+
+
 function getItemData(url) {
     let website = new XMLHttpRequest();
     website.addEventListener('load', function() {
-        let temp = this.responseText;
-        return temp;
+        document.querySelector('div').innerHTML = this.responseText;
+        console.log(this.responseText);
+        requestHandler(url);
     });
     website.open('GET', url);
     website.send();
 }
-
-
-function addItemToDatabase(url) {
-    
+function addButtonListener() {    
+    document.querySelectorAll('.addButton')[1].addEventListener('click', function() {
+        console.log('working');
+        for (i of document.querySelectorAll('.addItemPopup *')) {
+            i.style['display'] = 'block';
+        }
+        for (i of document.querySelectorAll('.addItemPopup div div, .addItemPopup, .addItemPopup div header')) {
+         i.style['display'] = 'flex';
+        }
+       
+        
+    })
 }

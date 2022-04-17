@@ -102,6 +102,78 @@
 }
 
 .fa-solid {
-    font-size: 20em;
+    font-size: 2em;
+}
+
+.itemsdatabaseTopButtons {
+    width: 100%;
+    height: 100px;
+}
+
+.addItemPopup {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.addItemPopup textarea {
+    margin: 0;
+    resize: none;
+    width: 70%;
+    font-size: 1.5em;
+    height: 80%;
+    color: #fff;
+}
+
+.addItemPopup div {
+    width: 70%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.addItemPopup div div {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addItemPopup div header {
+    color: #fff;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    border-bottom: 3px solid #fff;
+    font-size: 2em;
+}
+
+.addItemPopup * {
+    z-index: 5;
+    background-color: #524F4D;
+    border-bottom-color: #fff;
+    border-top-color: #fff;
+    border-right-color: #fff;
+    border-left-color: #fff;
+    
+}
+
+.addButton {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
 }
 
