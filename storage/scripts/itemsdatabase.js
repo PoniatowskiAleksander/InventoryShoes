@@ -104,11 +104,12 @@ function getItemData(url) {
 }
 function addButtonListener() {    
     document.querySelectorAll('.addButton')[1].addEventListener('click', function() {
+        document.body.style['overflow'] = 'hidden';
         console.log('working');
         for (i of document.querySelectorAll('.addItemPopup *')) {
             i.style['display'] = 'block';
         }
-        for (i of document.querySelectorAll('.addItemPopup div div, .addItemPopup, .addItemPopup div header')) {
+        for (i of document.querySelectorAll('.addItemPopup div, .addItemPopup div div, .addItemPopup, .addItemPopup div header')) {
          i.style['display'] = 'flex';
         }
        
