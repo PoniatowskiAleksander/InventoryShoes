@@ -1,0 +1,38 @@
+all.css - css which applies for any situation like body bgc
+inventory.css - css which applies for situation when inventory is chosen and opened
+itemsdatabase.css - css which applies for situation when database is chosen and opened
+nav.css - css which applies for nav element which appears at the top of the screen all the time so you can switch on inventory or itemsdatabase
+
+.addItemPopup - class which has its use when you want to add a new item to the itemsdatabase ITS NOT VISIBLE TILL PROPER BUTTON CLICKED
+
+.itemsdatabaseCodeStorage - code storage means that it is not visible till sth happens in this case it is what will appear after loading .json file as a database for itemsdatabase After doing right things the html in .itemsdatabase will change to one stored here and in itemsdatabase.js Its in fetch located in addEventListener in line 1
+
+.itemsdatabaseTopButtons - a thing that stores buttons like add a record or delete a record
+
+.emptyDiv - a div that is some kind of a margin but in another element you can put it everywhere you want
+
+.addButton - button to add a record to the itemsdatabase
+
+nav - navigation at the top of the screen its styles file is nav.css
+
+.itemsLoaded - some paragraph to store some data - just an easy way to save values globally
+
+.inventoryButton - button switching mode to inventory
+
+.whiteLine - div that pretents to be hr but u can do more things with it
+
+.databaseButton - button switching mode to itemsdatabase
+
+.navhr - hr that separates the nav from the rest of the screen
+
+.empty - kinda .emptyDiv
+
+.inventory - div in with all html necessary to display the inventory is stored or added by inventory.js or so
+
+.itemsdatabase - div in with all html necessary to display the itemsdatabase is stored or added by itemsdatabase.js or so
+
+.beforeLoadDiv - div which content applies before loading the database
+
+.error - paragraph in which errors display like errors with loading the database or something
+
+footer - now its nothing
