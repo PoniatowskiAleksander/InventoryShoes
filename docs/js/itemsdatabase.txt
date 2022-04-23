@@ -1,0 +1,20 @@
+document.querySelector('.itemsdatabase .beforeLoadDiv button') - (line 1) button to load the database
+    after loading the database and checking if everything is valid
+    fetch if setting everything up and all of its content just creates
+    .item element which is appended to .itemsdatabaseMainDiv
+
+
+getItemData(url) - 
+    PARAM: url - url to stockx item from which data is gathered
+
+    getting item data from given url
+
+
+requestHandler(url) -
+    PARAM: url - url to stockx item from which data is gathered
+
+    handles the request and gathering specific data from that url
+
+
+addButtonListener() -
+    adding event listener to "plus button" which adds new item to the itemsdatabase

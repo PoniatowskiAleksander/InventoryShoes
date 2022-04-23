@@ -91,7 +91,6 @@ function requestHandler(url) {
     
 }
 
-
 function getItemData(url) {
     let website = new XMLHttpRequest();
     website.addEventListener('load', function() {
@@ -102,6 +101,7 @@ function getItemData(url) {
     website.open('GET', url);
     website.send();
 }
+
 function addButtonListener() {    
     document.querySelectorAll('.addButton')[1].addEventListener('click', function() {
         document.body.style['overflow'] = 'hidden';
